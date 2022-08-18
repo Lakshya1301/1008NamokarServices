@@ -1,0 +1,81 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*flex-direction: column;*/
+    background: black;
+    margin-top: 50px;
+}
+.icon{
+    position: relative;
+    display: flex;
+
+}
+.icon li{
+    position: relative;
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+
+}
+.icon li a{
+    text-decoration: none;
+}
+.icon li a .fa{
+    font-size: 3em;
+    color:#222;
+    z-index: 10;
+    transition: 0.5s ease-in-out;
+}
+.icon li a .fa:hover{
+    opacity: 0;
+}
+
+.icon li::before{
+    font-family: fontAwesome;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 3em;
+    height: 0;
+    overflow: hidden;
+    transition: 0.7s ease-in-out;
+
+}
+.icon li:nth-child(1):before{
+    content: '\f232';
+    color: #25d366;
+    border-bottom: 4px solid #25d366;
+}
+.icon li:hover::before{
+    height: 100%;
+}
+
+.icon li:nth-child(2):before{
+    content: '\f16d ';
+    color: #4c68d7;
+    border-bottom: 4px solid #4c68d7;
+
+
+}
+.icon li:hover::before{
+    height: 100%;
+
+}
+
+.icon li:nth-child(3):before{
+    content: '\f003';
+    color: red;
+    border-bottom: 4px solid red;
+}
+.icon li:hover::before{
+    height: 100%;
+}
+.icon li:nth-child(4):before{
+    content: '\f095';
+    color: #1da1f2;
+    border-bottom: 4px solid #1da1f2;
+}
+.icon li:hover::before{
+    height: 100%;
+}

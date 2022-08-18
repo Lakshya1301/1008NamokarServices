@@ -1,0 +1,241 @@
+/*applicable to all html files*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    height: 88px;
+}
+.namo1{
+    display: none;
+}
+.logo1{
+    display: none;
+}
+.burger{
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line{
+    width: 33px;
+    background-color:white;
+    height: 3px;
+    margin: 3px 3px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 17.5px;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+p{
+    color: #555;
+}
+.container{
+    /*   max-width: 1500px;*/
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.header{
+    background: radial-gradient(#4B79A1,#283E51);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    
+}
+.search1{
+    width: 1000px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.search{
+    width: 400px;
+    height: 27px;
+    border-radius: 6px;
+}
+.btn{
+    width: 60px;
+    height: 27px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+.container1{
+    display: flex;
+    width:100%;
+    height: auto;
+
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin-top: 40px;
+}
+.subdiv{
+    width: 300px;
+    height: 250px;
+    background-color: red;
+    padding: 10px 10px;
+}
+.best{
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.bestseller{
+    color: black;
+    width: auto;
+    height: auto;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.contact{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 90px;
+}
+.contactus{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    height: 10px;
+}
+
+.tnc{
+    color: white;
+}
+.dots{
+    justify-content: space-evenly;
+}
+@media only screen and (max-width:1800px){
+    .search1{
+        width: 900px;
+    }
+}
+@media only screen and (max-width:1750px){
+    .search1{
+        width: 850px;
+    }
+}
+@media only screen and (max-width:1700px){
+    .search1{
+        width: 800px;
+    }
+}
+@media only screen and (max-width:1650px){
+    .search1{
+        width: 750px;
+    }
+}
+@media only screen and (max-width:1600px){
+    .search1{
+        width: 700px;
+    }
+}
+@media only screen and (max-width:1550px){
+    .search1{
+        width: 650px;
+    }
+}
+@media only screen and (max-width:1500px){
+    .search1{
+        width: 600px;
+    }
+}
+@media only screen and (max-width:1450px){
+    .search1{
+        width: 550px;
+    }
+}
+@media only screen and (max-width:1400px){
+    .search1{
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width:1350px){
+    .header{
+        height: 350px;
+          transition: all 0.8s ease-out;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    nav ul{
+        display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    align-items: center;
+    }
+     .logo{
+        display: none;
+    }
+
+     .namo{
+          display: none;
+    }
+     .logo1{
+        display: block;
+        font-size: 30px;
+        color: white;
+        font-weight: bold;
+    }
+     .namo1{
+          display:block;
+    }
+    .burger{
+        display: block;
+    }
+     .h-nav-responsive{
+        height: 82px
+    }
+    .v-nav-responsive{
+        opacity: 0;
+    }
+    .nav{
+        margin-top: 10px;
+    }
+    nav ul li{
+        padding-top: 5px;
+    }
+    .cart1{
+        padding-top: 10px;
+    }
+}
